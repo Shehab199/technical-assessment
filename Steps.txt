@@ -1,0 +1,24 @@
+1- Create Datebase "technical_assessment"
+2- Open project in any text editor (VS Code, Atom, Sublime Text etc.)
+3- Fill the DB_* environments  with your own data.
+4- Run "composer install"
+5- Run "php artisan migrate --seed"
+6- Run "php artisan passport:install"  to generate client credentials for API access.
+7- You will find Client ID and Client Secret at /client/public/oauth-clients.json file.
+8- Copy them into DB_CLIENT_ID & DB_CLIENT_SECRET variables on .env file.
+9- Now you can use Postman or cURL to make requests to http://localhost:8000/api/* endpoints.
+   Make sure that each request includes a Bearer Token from step 8.
+
+Note: This is an example of how to set up a Laravel application using Passport for OAuth2 authentication. It's not meant to be used as it is in production - there
+Note: If you are using Windows OS, please follow these steps additionally:
+a) Install MySQL server if it's not installed yet.
+b) Use Git Bash instead of Command Prompt.
+c) Include full path to PHP executable in system environment variable named PATH. For example: C:\Program Files\PHP\v7.3;C:\Program Files\
+c) Include full path to PHP executable in system environment variable named PATH. For example: C:\Program Files\PHP\v7.4;C:\Program Files\
+c) Include full path to PHP executable in system environment variable named PATH. For example: C:\Program Files\PHP\v7.4;C:\Users\User
+c) Include full path to PHP executable in system environment variable named PATH. For example: C:\Program Files\PHP\v7.4;C:\Users\User
+c) Include full path to PHP executable in system environment variable named PATH. For example: C:\Program Files\PHP\v7.3;C:\Program Files\
+c) Include full path to php and composer commands like this example: C:\path\to\php\php.exe and C:\path\to\composer
+c) Include full path to php and composer commands like this example: C:\path\to\php\php.exe and C:\path\to\composer\bin\compos
+c) Include full path to PHP executable in system environment variable named PATH.
+   Example: C:\Program Files\PHP\v7.4\
